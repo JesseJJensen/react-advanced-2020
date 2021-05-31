@@ -1,17 +1,19 @@
-import React from 'react';
+import React from 'react'
 
 const ErrorExample = () => {
-  let title = 'random title';
+  let title = 'random title'
   const handleClick = () => {
     title = 'hello world'
     console.log(title)
   }
-  return ( 
+  return (
     <React.Fragment>
       <h2>{title}</h2>
-      <button type='button' className='btn' onClick={handleClick}>Change Title</button>
+      <button type='button' className='btn' onClick={handleClick}>
+        Change Title
+      </button>
     </React.Fragment>
   )
-};
+}
 
-export default ErrorExample;
+export default ErrorExample
