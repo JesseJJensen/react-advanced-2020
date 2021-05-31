@@ -7,9 +7,11 @@ const UseStateObject = () => {
     message: 'random message',
   })
 
-  // const [name, setName] = useState('peter')
-  // const [age, setAge] = useState(24)
-  // const [message, setMessage] = useState('random message')
+  /*// unhide 11,12,13,17;hide 16;remove "person." from h3's
+const [name, setName] = useState('peter')
+const [age, setAge] = useState(24)
+const [message, setMessage] = useState('random message')
+*/
 
   const changeMessage = () => {
     setPerson({ ...person, message: 'hello world' })
