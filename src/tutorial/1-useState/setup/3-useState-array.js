@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { data } from '../../../data'
 
 const UseStateArray = () => {
-  const [people, setPeople] = React.useState(data)
+  const [people, setPeople] = useState(data)
   return (
     <>
       {people.map((person) => {
@@ -13,7 +13,6 @@ const UseStateArray = () => {
           </div>
         )
       })}
-      <button className='btn'></button>
     </>
   )
 }
