@@ -4,10 +4,18 @@ import React, { useState, useEffect } from 'react'
 // second parameter
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0)
+
   useEffect(() => {
     console.log('call useEffect')
-    document.title = `New Messeges(${value})`
-  })
+    if (value >= 1) {
+      document.title = `New Messeges(${value})`
+    }
+  }, [value])
+
+  useEffect(() => {
+    console.log('hello world')
+  }, [])
+
   console.log('render component')
   return (
     <>
