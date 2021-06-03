@@ -8,9 +8,9 @@ const UseStateCounter = () => {
   }
 
   const complexIncrease = () => {
-    setTimeout(() => {
+    setTimeout(() => {   // adds only 1 click every 2sec
       // setValue(value + 1)
-      setValue((prevState) => {
+      setValue((prevState) => { // adds all clicks 
         return prevState + 1
       })
     }, 2000)
